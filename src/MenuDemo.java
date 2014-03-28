@@ -178,11 +178,12 @@ public class MenuDemo implements ActionListener, ItemListener {
                 double[] y = new double[n];
                 for(int i=0; i<n; i++){
                 	x[i]  = array.get(0).get(i);
-                	y[i]  = array.get(1).get(i);;
+                	y[i]  = array.get(1).get(i);
                 }
                 
 				Plot2DPanel plot = new Plot2DPanel();
                 plot.addLinePlot("my plot", x, y);
+                
                 // add a title
                 BaseLabel title = new BaseLabel("Order Book", Color.RED, 0.5, 1.1);
                 title.setFont(new Font("Courier", Font.BOLD, 20));
